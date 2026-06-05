@@ -15,3 +15,7 @@
 - main_segment / main_randomCard / main_productCard
 - Home, Map, BarCode, Coupon, More
 - token 계층 (tokenMovie, tokenCafe, tokenRestaurant...)
+
+## 기록
+
+- 260605(금) 기록 파일 업로드

@@ -4,6 +4,7 @@
 
 - [내 주변 할인 가맹점] map_bottomSheet 수정
 - 바코드 bottomSheet 제작
+- 쿠폰 section 기획
 
 ## 2026-06-05 (금)
 

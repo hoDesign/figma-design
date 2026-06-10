@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>토스애즈 | 결제 데이터 기반 타겟팅 광고</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+</head>
+<body>
+
+  <!-- FLOATING: popup button (top right) -->
+  <button class="floating-popup" id="floatingPopup">
+    광고<br />시작하기
+  </button>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <img src="img/logo_color.png" alt="toss ads" class="nav-logo" />
+    <div class="nav-actions">
+      <button class="btn-login">로그인</button>
+      <button class="btn-start">광고 시작하기</button>
+    </div>
+  </nav>
+
+  <!-- HEAD BANNER -->
+  <section class="head-banner" id="section-banner">
+    <!-- 블러 워터마크 배경 -->
+    <img src="img/background.png" alt="" class="banner-bg-blur" />
+    <!-- 파란 글로우 -->
+    <div class="banner-glow"></div>
+
+    <div class="banner-content">
+      <h1 class="banner-title">
+        <span class="title-blue">3,000만</span> 토스 유저 중,<br />
+        <span class="title-teal">내 가게를 방문할 사람은?</span>
+      </h1>
+      <p class="banner-desc">
+        토스의 실제 결제 데이터를 기반으로<br />
+        유력한 잠재 고객만 골라 눈앞에 보여드립니다.
+      </p>
+      <div class="banner-buttons">
+        <button class="btn-pill-outline">프로모션 알아보기</button>
+        <button class="btn-pill-blue">내 업종 타겟팅 확인하기</button>
+      </div>
+    </div>
+
+    <img src="img/moneybag.png" alt="moneybag" class="banner-moneybag" />
+
+    <!-- 하단 chevron -->
+    <div class="banner-chevron">
+      <svg width="32" height="20" viewBox="0 0 32 20" fill="none">
+        <path d="M2 2L16 16L30 2" stroke="#B0BEC5" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- MAIN INFORMATION -->
+  <section class="main-info" id="section-main">
+    <div class="section-label">Main infomation</div>
+
+    <!-- Tab buttons -->
+    <div class="tab-buttons">
+      <button class="tab-btn active" data-tab="0">유저 타겟팅</button>
+      <button class="tab-btn" data-tab="1">결제 데이터</button>
+      <button class="tab-btn" data-tab="2">성과 측정</button>
+    </div>
+
+    <!-- Carousel -->
+    <div class="carousel-wrapper">
+      <div class="carousel-slide blur-side">
+        <img src="img/main-info 02.png" alt="결제 데이터" />
+      </div>
+      <div class="carousel-slide active-slide">
+        <img src="img/main-info 01.png" alt="유저 타겟팅" />
+        <p class="slide-caption">3,000만 토스 유저에게 직접 광고하세요</p>
+      </div>
+      <div class="carousel-slide blur-side">
+        <img src="img/main-info 03.png" alt="성과 측정" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SUB INFORMATION -->
+  <section class="sub-info" id="section-sub">
+    <div class="section-label">Sub infomation</div>
+
+    <!-- Floating side nav -->
+    <div class="side-nav" id="sideNav">
+      <div class="side-nav-dot active"></div>
+      <div class="side-nav-line"></div>
+      <div class="side-nav-dot"></div>
+    </div>
+
+    <h2 class="sub-title">토스애즈가 선택받는 이유</h2>
+
+    <div class="sub-grid">
+      <div class="sub-grid-item">
+        <img src="img/main-info 01.png" alt="슬라이드 1" />
+        <p>3,000만 유저</p>
+      </div>
+      <div class="sub-grid-item">
+        <img src="img/main-info 02.png" alt="슬라이드 2" />
+        <p>결제 데이터 기반</p>
+      </div>
+      <div class="sub-grid-item">
+        <img src="img/main-info 03.png" alt="슬라이드 3" />
+        <p>성과 측정</p>
+      </div>
+      <div class="sub-grid-item">
+        <img src="img/moneybag.png" alt="슬라이드 4" />
+        <p>광고 수익</p>
+      </div>
+      <div class="sub-grid-item">
+        <img src="img/main-info 01.png" alt="슬라이드 5" />
+        <p>타겟팅 최적화</p>
+      </div>
+      <div class="sub-grid-item">
+        <img src="img/main-info 02.png" alt="슬라이드 6" />
+        <p>실시간 대시보드</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="section-cta">
+    <div class="section-label">CTA</div>
+    <div class="cta-card">
+      <div class="cta-img-area">
+        <img src="img/moneybag.png" alt="CTA 이미지" />
+        <p class="cta-card-title">지금 광고를 시작해보세요</p>
+        <p class="cta-card-desc">토스애즈와 함께라면 더 많은 고객이 찾아옵니다.</p>
+      </div>
+      <div class="cta-buttons">
+        <button class="btn-outline">프로모션 알아보기</button>
+        <button class="btn-blue">광고 시작하기</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="section-footer">
+    <div class="section-label">Footer</div>
+
+    <!-- Floating popup in footer area -->
+    <button class="floating-popup floating-popup-footer">
+      광고<br />시작하기
+    </button>
+
+    <div class="footer-family">
+      <p class="footer-family-label">family site</p>
+      <div class="footer-family-links">
+        <a href="#">토스</a>
+        <a href="#">토스뱅크</a>
+        <a href="#">토스증권</a>
+        <a href="#">토스인슈어런스</a>
+        <a href="#">토스페이먼츠</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-copy-row">
+        <img src="img/logo_black.svg" alt="toss ads" class="footer-logo" />
+        <span class="footer-copy">© 2024 Viva Republica, Inc. All rights reserved.</span>
+      </div>
+      <div class="footer-refer">
+        <a href="#">이용약관</a>
+        <a href="#">개인정보 처리방침</a>
+        <a href="#">광고 정책</a>
+      </div>
+      <div class="footer-sns">
+        <a href="#" class="sns-link">Instagram</a>
+        <a href="#" class="sns-link">Naver</a>
+        <a href="#" class="sns-link">X</a>
+        <a href="#" class="sns-link">Toss Feed</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

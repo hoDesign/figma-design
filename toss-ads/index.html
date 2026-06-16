@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>토스애즈 | 결제 데이터 기반 타겟팅 광고</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
 </head>
 <body>
 
@@ -16,10 +16,48 @@
 
   <!-- NAV -->
   <nav class="nav">
-    <img src="img/logo_color.png" alt="toss ads" class="nav-logo" />
-    <div class="nav-actions">
-      <button class="btn-login">로그인</button>
-      <button class="btn-start">광고 시작하기</button>
+    <div class="nav-inner">
+      <a href="index.html"><img src="img/logo_color.png" alt="toss ads" class="nav-logo" /></a>
+      <div class="nav-links">
+
+        <div class="nav-item">
+          <a href="#">광고 소개</a>
+          <ul class="nav-dropdown">
+            <li><a href="#">토스애즈란?</a></li>
+            <li><a href="#">광고 상품 소개</a></li>
+            <li><a href="#">타겟팅 방식</a></li>
+            <li><a href="#">성과 측정</a></li>
+            <li><a href="#">파트너사 혜택</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-item">
+          <a href="#">이용 방법</a>
+          <ul class="nav-dropdown">
+            <li><a href="#">광고 시작하기</a></li>
+            <li><a href="#">캠페인 설정</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-item">
+          <a href="#">공지사항</a>
+          <ul class="nav-dropdown">
+            <li><a href="#">서비스 업데이트</a></li>
+            <li><a href="#">정책 변경 안내</a></li>
+            <li><a href="#">시스템 점검</a></li>
+            <li><a href="#">이벤트 안내</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-item">
+          <a href="#">블로그</a>
+        </div>
+
+        <div class="nav-item">
+          <a href="#">동영상 강의</a>
+        </div>
+
+      </div>
     </div>
   </nav>
 
@@ -41,7 +79,7 @@
       </p>
       <div class="banner-buttons">
         <button class="btn-pill-outline">프로모션 알아보기</button>
-        <button class="btn-pill-blue">내 업종 타겟팅 확인하기</button>
+        <a href="index2.html" class="btn-pill-blue" style="text-decoration:none;display:inline-flex;align-items:center;">내 업종 타겟팅 확인하기</a>
       </div>
     </div>
 
@@ -56,75 +94,79 @@
   </section>
 
   <!-- MAIN INFORMATION -->
-  <section class="main-info" id="section-main">
-    <div class="section-label">Main infomation</div>
+  <section class="main-info reveal" id="section-main">
 
     <!-- Tab buttons -->
     <div class="tab-buttons">
-      <button class="tab-btn active" data-tab="0">유저 타겟팅</button>
-      <button class="tab-btn" data-tab="1">결제 데이터</button>
-      <button class="tab-btn" data-tab="2">성과 측정</button>
+      <button class="tab-btn" data-tab="0"><span class="tab-num">1</span>일상 속의 슈퍼앱</button>
+      <button class="tab-btn active" data-tab="1"><span class="tab-num">2</span>결제 데이터 타겟팅</button>
+      <button class="tab-btn" data-tab="2"><span class="tab-num">3</span>고효율 머신러닝 모델</button>
     </div>
 
     <!-- Carousel -->
     <div class="carousel-wrapper">
-      <div class="carousel-slide blur-side">
-        <img src="img/main-info 02.png" alt="결제 데이터" />
-      </div>
-      <div class="carousel-slide active-slide">
-        <img src="img/main-info 01.png" alt="유저 타겟팅" />
-        <p class="slide-caption">3,000만 토스 유저에게 직접 광고하세요</p>
-      </div>
-      <div class="carousel-slide blur-side">
-        <img src="img/main-info 03.png" alt="성과 측정" />
+      <div class="carousel-track" id="carouselTrack">
+        <div class="carousel-slide" data-index="0">
+          <img src="img/main-info 02.png" alt="유저 타겟팅" />
+          <div class="slide-text">
+            <p class="slide-title"><span class="shimmer-blue">국민의 절반</span>이 쓰는 앱, 트래픽이 곧 매출입니다</p>
+            <p class="slide-copy">누적 가입자 3,000만 명의 일상에 스며든 슈퍼앱 토스에서 브랜드 메시지를 전달하세요. 매일 실행하는 유저들의 주요 사용 흐름 속에 자연스럽게 노출되어 <br><strong>스쳐 지나가는 광고가 아닌 확실한 각인 효과</strong>를 보장합니다.</p>
+          </div>
+        </div>
+        <div class="carousel-slide" data-index="1">
+          <img src="img/main-info 01.png" alt="결제 데이터" />
+          <div class="slide-text">
+            <p class="slide-title">관심사 추정은 그만! <span class="shimmer-green">진짜 고객</span>만 골라 노출해 드립니다</p>
+            <p class="slide-copy">실제 구매력이 있는 유저를 구분하는 것이 마케팅 효율의 핵심입니다. 국민 절반의 금융 계좌와 소비 흐름을 품은 토스이기에 가능한 타겟팅으로, <br>구매 전환 <strong>가능성이 입증된 진성 고객</strong>만을 솎아내어 보여줍니다.</p>
+          </div>
+        </div>
+        <div class="carousel-slide" data-index="2">
+          <img src="img/main-info 03.png" alt="성과 측정" />
+          <div class="slide-text">
+            <p class="slide-title">광고비는 줄이고, <span class="shimmer-coral">전환 성과</span>는 높이고</p>
+            <p class="slide-copy">매 순간 축적되는 광고 성과 지표와 앱 내 유저 행동 흐름을 실시간으로 학습합니다. 복잡한 사후 분석 없이도, AI가 유저의 전환 이탈 구간을 <br>실시간 방어하여 <strong>비즈니스가 원하는 가장 유의미한 결과</strong>만을 안정적으로 도출해 냅니다.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- SUB INFORMATION -->
-  <section class="sub-info" id="section-sub">
-    <div class="section-label">Sub infomation</div>
+  <section class="sub-info reveal" id="section-sub">
 
-    <!-- Floating side nav -->
-    <div class="side-nav" id="sideNav">
-      <div class="side-nav-dot active"></div>
-      <div class="side-nav-line"></div>
-      <div class="side-nav-dot"></div>
-    </div>
 
-    <h2 class="sub-title">토스애즈가 선택받는 이유</h2>
+    <h2 class="sub-title"><span>숫자로 증명된</span> 진짜 성과를 확인해보세요</h2>
 
     <div class="sub-grid">
       <div class="sub-grid-item">
-        <img src="img/main-info 01.png" alt="슬라이드 1" />
-        <p>3,000만 유저</p>
+        <img src="img/올리브영.png" alt="올리브영" />
+        <p>올영세일 구매 전환 효율 56% 개선</p>
       </div>
       <div class="sub-grid-item">
-        <img src="img/main-info 02.png" alt="슬라이드 2" />
-        <p>결제 데이터 기반</p>
+        <img src="img/메리츠.png" alt="메리츠" />
+        <p>리드 전환율 (CVR) 2.5배 개선</p>
       </div>
       <div class="sub-grid-item">
-        <img src="img/main-info 03.png" alt="슬라이드 3" />
-        <p>성과 측정</p>
+        <img src="img/오늘의 집.png" alt="오늘의집" />
+        <p>잠재고객 타겟팅 자동화로<br>CPA 62% 절감</p>
       </div>
       <div class="sub-grid-item">
-        <img src="img/moneybag.png" alt="슬라이드 4" />
-        <p>광고 수익</p>
+        <img src="img/엘지U+.png" alt="LG U+" />
+        <p>180만 명의 유저 참여<br>앱 설치 단가(CPI) 39%감소</p>
       </div>
       <div class="sub-grid-item">
-        <img src="img/main-info 01.png" alt="슬라이드 5" />
-        <p>타겟팅 최적화</p>
+        <img src="img/지마켓.png" alt="지마켓" />
+        <p>앱테크 활용으로 트래픽 190% 상승</p>
       </div>
       <div class="sub-grid-item">
-        <img src="img/main-info 02.png" alt="슬라이드 6" />
-        <p>실시간 대시보드</p>
+        <img src="img/현대해상.png" alt="현대해상" />
+        <p>유튜브 영상 시청 완료율<br>목표 대비 1.7배 달성</p>
       </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="cta-section" id="section-cta">
-    <div class="section-label">CTA</div>
+  <section class="cta-section reveal" id="section-cta">
     <div class="cta-card">
       <div class="cta-img-area">
         <img src="img/moneybag.png" alt="CTA 이미지" />
@@ -140,12 +182,6 @@
 
   <!-- FOOTER -->
   <footer class="footer" id="section-footer">
-    <div class="section-label">Footer</div>
-
-    <!-- Floating popup in footer area -->
-    <button class="floating-popup floating-popup-footer">
-      광고<br />시작하기
-    </button>
 
     <div class="footer-family">
       <p class="footer-family-label">family site</p>
